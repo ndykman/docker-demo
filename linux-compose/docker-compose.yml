@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  nginx-compose-1:
+    build : .
+    ports:
+      - "8005:80"
+  nginx-compose-2:
+    image: "nginx"
+    ports:
+      - "8006:80"
+    volumes:
+      - "C:\\Git\\docker-demo\\linux-html:/usr/share/nginx/html"
