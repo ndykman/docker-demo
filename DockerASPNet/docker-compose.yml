@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  dockeraspnet:
+    image: dockeraspnet
+    build:
+      context: .
+      dockerfile: DockerASPNet/Dockerfile
